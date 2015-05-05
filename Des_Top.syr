@@ -1,0 +1,692 @@
+Release 12.1 - xst M.53d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.57 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.57 secs
+ 
+--> Reading design: Des_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Des_Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Des_Top"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-4-fg320
+
+---- Source Options
+Top Module Name                    : Des_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Des_Top.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Xor_permutation.v" in library work
+Compiling verilog file "Xor_operation.v" in library work
+Module <Xor_Permutation> compiled
+Compiling verilog file "Sbox_Rom8.v" in library work
+Module <Xor_Operation> compiled
+Compiling verilog file "Sbox_Rom7.v" in library work
+Module <Sbox_Rom8> compiled
+Compiling verilog file "Sbox_Rom6.v" in library work
+Module <Sbox_Rom7> compiled
+Compiling verilog file "Sbox_Rom5.v" in library work
+Module <Sbox_Rom6> compiled
+Compiling verilog file "Sbox_Rom4.v" in library work
+Module <Sbox_Rom5> compiled
+Compiling verilog file "Sbox_Rom3.v" in library work
+Module <Sbox_Rom4> compiled
+Compiling verilog file "Sbox_Rom2.v" in library work
+Module <Sbox_Rom3> compiled
+Compiling verilog file "Sbox_Rom1.v" in library work
+Module <Sbox_Rom2> compiled
+Compiling verilog file "Sbox_output.v" in library work
+Module <Sbox_Rom1> compiled
+Compiling verilog file "Reg32.v" in library work
+Module <Sbox_Output> compiled
+Compiling verilog file "Permuted_Choice2.v" in library work
+Module <Reg32> compiled
+Compiling verilog file "Permutation.v" in library work
+Module <Permuted_Choice2> compiled
+Compiling verilog file "key_gen.v" in library work
+Module <Permutation> compiled
+Compiling verilog file "Expansion_P.v" in library work
+Module <Key_Generation> compiled
+Compiling verilog file "Swap.v" in library work
+Module <Expansion_Permutation> compiled
+Compiling verilog file "Round1.v" in library work
+Module <Swap> compiled
+Compiling verilog file "key_top.v" in library work
+Module <Round1> compiled
+Compiling verilog file "inverse_initial_perm.v" in library work
+Module <Key_Top> compiled
+Compiling verilog file "initial_Perm.v" in library work
+Module <Inverse_Initial_Permutation> compiled
+Compiling verilog file "Des_Top.v" in library work
+Module <Initial_Permutation> compiled
+Module <Des_Top> compiled
+No errors in compilation
+Analysis of file <"Des_Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Des_Top> in library <work>.
+
+Analyzing hierarchy for module <Initial_Permutation> in library <work>.
+
+Analyzing hierarchy for module <Key_Top> in library <work>.
+
+Analyzing hierarchy for module <Round1> in library <work>.
+
+Analyzing hierarchy for module <Swap> in library <work>.
+
+Analyzing hierarchy for module <Inverse_Initial_Permutation> in library <work>.
+
+Analyzing hierarchy for module <Key_Generation> in library <work>.
+
+Analyzing hierarchy for module <Permuted_Choice2> in library <work>.
+
+Analyzing hierarchy for module <Expansion_Permutation> in library <work>.
+
+Analyzing hierarchy for module <Xor_Operation> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom1> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom2> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom3> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom4> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom5> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom6> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom7> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Rom8> in library <work>.
+
+Analyzing hierarchy for module <Sbox_Output> in library <work>.
+
+Analyzing hierarchy for module <Permutation> in library <work>.
+
+Analyzing hierarchy for module <Xor_Permutation> in library <work>.
+
+Analyzing hierarchy for module <Reg32> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Des_Top>.
+Module <Des_Top> is correct for synthesis.
+ 
+Analyzing module <Initial_Permutation> in library <work>.
+WARNING:Xst:905 - "initial_Perm.v" line 35: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <PLAIN_TEXT>
+Module <Initial_Permutation> is correct for synthesis.
+ 
+Analyzing module <Key_Top> in library <work>.
+Module <Key_Top> is correct for synthesis.
+ 
+Analyzing module <Key_Generation> in library <work>.
+Module <Key_Generation> is correct for synthesis.
+ 
+Analyzing module <Permuted_Choice2> in library <work>.
+Module <Permuted_Choice2> is correct for synthesis.
+ 
+Analyzing module <Round1> in library <work>.
+Module <Round1> is correct for synthesis.
+ 
+Analyzing module <Expansion_Permutation> in library <work>.
+Module <Expansion_Permutation> is correct for synthesis.
+ 
+Analyzing module <Xor_Operation> in library <work>.
+Module <Xor_Operation> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom1> in library <work>.
+Module <Sbox_Rom1> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom2> in library <work>.
+Module <Sbox_Rom2> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom3> in library <work>.
+Module <Sbox_Rom3> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom4> in library <work>.
+Module <Sbox_Rom4> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom5> in library <work>.
+Module <Sbox_Rom5> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom6> in library <work>.
+Module <Sbox_Rom6> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom7> in library <work>.
+Module <Sbox_Rom7> is correct for synthesis.
+ 
+Analyzing module <Sbox_Rom8> in library <work>.
+Module <Sbox_Rom8> is correct for synthesis.
+ 
+Analyzing module <Sbox_Output> in library <work>.
+Module <Sbox_Output> is correct for synthesis.
+ 
+Analyzing module <Permutation> in library <work>.
+Module <Permutation> is correct for synthesis.
+ 
+Analyzing module <Xor_Permutation> in library <work>.
+Module <Xor_Permutation> is correct for synthesis.
+ 
+Analyzing module <Reg32> in library <work>.
+Module <Reg32> is correct for synthesis.
+ 
+Analyzing module <Swap> in library <work>.
+Module <Swap> is correct for synthesis.
+ 
+Analyzing module <Inverse_Initial_Permutation> in library <work>.
+Module <Inverse_Initial_Permutation> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Initial_Permutation>.
+    Related source file is "initial_Perm.v".
+    Found 64-bit tristate buffer for signal <INITIAL_PERMUTATION_OUTPUT>.
+    Summary:
+	inferred  64 Tristate(s).
+Unit <Initial_Permutation> synthesized.
+
+
+Synthesizing Unit <Swap>.
+    Related source file is "Swap.v".
+Unit <Swap> synthesized.
+
+
+Synthesizing Unit <Inverse_Initial_Permutation>.
+    Related source file is "inverse_initial_perm.v".
+Unit <Inverse_Initial_Permutation> synthesized.
+
+
+Synthesizing Unit <Key_Generation>.
+    Related source file is "key_gen.v".
+WARNING:Xst:647 - Input <KEY<64>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<56>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<48>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<40>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <KEY<8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 56-bit tristate buffer for signal <OUTPUT_PERMUTATION_CHOICE1>.
+    Summary:
+	inferred  56 Tristate(s).
+Unit <Key_Generation> synthesized.
+
+
+Synthesizing Unit <Permuted_Choice2>.
+    Related source file is "Permuted_Choice2.v".
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<54>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<43>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<38>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<35>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<25>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<22>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<18>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PERMUTATION2_INPUT<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Permuted_Choice2> synthesized.
+
+
+Synthesizing Unit <Expansion_Permutation>.
+    Related source file is "Expansion_P.v".
+Unit <Expansion_Permutation> synthesized.
+
+
+Synthesizing Unit <Xor_Operation>.
+    Related source file is "Xor_operation.v".
+    Found 48-bit xor2 for signal <SBOX_INPUT>.
+Unit <Xor_Operation> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom1>.
+    Related source file is "Sbox_Rom1.v".
+    Found 64x4-bit ROM for signal <S1_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom1> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom2>.
+    Related source file is "Sbox_Rom2.v".
+    Found 64x4-bit ROM for signal <S2_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom2> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom3>.
+    Related source file is "Sbox_Rom3.v".
+    Found 64x4-bit ROM for signal <S3_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom3> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom4>.
+    Related source file is "Sbox_Rom4.v".
+    Found 64x4-bit ROM for signal <S4_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom4> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom5>.
+    Related source file is "Sbox_Rom5.v".
+    Found 64x4-bit ROM for signal <S5_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom5> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom6>.
+    Related source file is "Sbox_Rom6.v".
+    Found 64x4-bit ROM for signal <S6_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom6> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom7>.
+    Related source file is "Sbox_Rom7.v".
+    Found 64x4-bit ROM for signal <S7_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom7> synthesized.
+
+
+Synthesizing Unit <Sbox_Rom8>.
+    Related source file is "Sbox_Rom8.v".
+    Found 64x4-bit ROM for signal <S8_OUTPUT>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Sbox_Rom8> synthesized.
+
+
+Synthesizing Unit <Sbox_Output>.
+    Related source file is "Sbox_output.v".
+Unit <Sbox_Output> synthesized.
+
+
+Synthesizing Unit <Permutation>.
+    Related source file is "Permutation.v".
+Unit <Permutation> synthesized.
+
+
+Synthesizing Unit <Xor_Permutation>.
+    Related source file is "Xor_permutation.v".
+    Found 32-bit xor2 for signal <RIGHT_REG>.
+Unit <Xor_Permutation> synthesized.
+
+
+Synthesizing Unit <Reg32>.
+    Related source file is "Reg32.v".
+    Found 32-bit register for signal <RIGHT_REG1>.
+    Found 32-bit register for signal <LEFT_REG1>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <Reg32> synthesized.
+
+
+Synthesizing Unit <Key_Top>.
+    Related source file is "key_top.v".
+Unit <Key_Top> synthesized.
+
+
+Synthesizing Unit <Round1>.
+    Related source file is "Round1.v".
+Unit <Round1> synthesized.
+
+
+Synthesizing Unit <Des_Top>.
+    Related source file is "Des_Top.v".
+Unit <Des_Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 128
+ 64x4-bit ROM                                          : 128
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Tristates                                            : 120
+ 1-bit tristate buffer                                 : 120
+# Xors                                                 : 32
+ 32-bit xor2                                           : 16
+ 48-bit xor2                                           : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 128
+ 64x4-bit ROM                                          : 128
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Xors                                                 : 32
+ 32-bit xor2                                           : 16
+ 48-bit xor2                                           : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2042 - Unit Key_Generation: 56 internal tristates are replaced by logic (pull-up yes): OUTPUT_PERMUTATION_CHOICE1<10>, OUTPUT_PERMUTATION_CHOICE1<11>, OUTPUT_PERMUTATION_CHOICE1<12>, OUTPUT_PERMUTATION_CHOICE1<13>, OUTPUT_PERMUTATION_CHOICE1<14>, OUTPUT_PERMUTATION_CHOICE1<15>, OUTPUT_PERMUTATION_CHOICE1<16>, OUTPUT_PERMUTATION_CHOICE1<17>, OUTPUT_PERMUTATION_CHOICE1<18>, OUTPUT_PERMUTATION_CHOICE1<19>, OUTPUT_PERMUTATION_CHOICE1<1>, OUTPUT_PERMUTATION_CHOICE1<20>, OUTPUT_PERMUTATION_CHOICE1<21>, OUTPUT_PERMUTATION_CHOICE1<22>, OUTPUT_PERMUTATION_CHOICE1<23>, OUTPUT_PERMUTATION_CHOICE1<24>, OUTPUT_PERMUTATION_CHOICE1<25>, OUTPUT_PERMUTATION_CHOICE1<26>, OUTPUT_PERMUTATION_CHOICE1<27>, OUTPUT_PERMUTATION_CHOICE1<28>, OUTPUT_PERMUTATION_CHOICE1<29>, OUTPUT_PERMUTATION_CHOICE1<2>, OUTPUT_PERMUTATION_CHOICE1<30>, OUTPUT_PERMUTATION_CHOICE1<31>, OUTPUT_PERMUTATION_CHOICE1<32>, OUTPUT_PERMUTATION_CHOICE1<33>, OUTPUT_PERMUTATION_CHOICE1<34>, OUTPUT_PERMUTATION_CHOICE1<35>, OUTPUT_PERMUTATION_CHOICE1<36>, OUTPUT_PERMUTATION_CHOICE1<37>, OUTPUT_PERMUTATION_CHOICE1<38>, OUTPUT_PERMUTATION_CHOICE1<39>, OUTPUT_PERMUTATION_CHOICE1<3>, OUTPUT_PERMUTATION_CHOICE1<40>, OUTPUT_PERMUTATION_CHOICE1<41>, OUTPUT_PERMUTATION_CHOICE1<42>, OUTPUT_PERMUTATION_CHOICE1<43>, OUTPUT_PERMUTATION_CHOICE1<44>, OUTPUT_PERMUTATION_CHOICE1<45>, OUTPUT_PERMUTATION_CHOICE1<46>, OUTPUT_PERMUTATION_CHOICE1<47>, OUTPUT_PERMUTATION_CHOICE1<48>, OUTPUT_PERMUTATION_CHOICE1<49>, OUTPUT_PERMUTATION_CHOICE1<4>, OUTPUT_PERMUTATION_CHOICE1<50>, OUTPUT_PERMUTATION_CHOICE1<51>, OUTPUT_PERMUTATION_CHOICE1<52>, OUTPUT_PERMUTATION_CHOICE1<53>, OUTPUT_PERMUTATION_CHOICE1<54>, OUTPUT_PERMUTATION_CHOICE1<55>, OUTPUT_PERMUTATION_CHOICE1<56>, OUTPUT_PERMUTATION_CHOICE1<5>, OUTPUT_PERMUTATION_CHOICE1<6>, OUTPUT_PERMUTATION_CHOICE1<7>, OUTPUT_PERMUTATION_CHOICE1<8>, OUTPUT_PERMUTATION_CHOICE1<9>.
+WARNING:Xst:2042 - Unit Initial_Permutation: 64 internal tristates are replaced by logic (pull-up yes): INITIAL_PERMUTATION_OUTPUT<10>, INITIAL_PERMUTATION_OUTPUT<11>, INITIAL_PERMUTATION_OUTPUT<12>, INITIAL_PERMUTATION_OUTPUT<13>, INITIAL_PERMUTATION_OUTPUT<14>, INITIAL_PERMUTATION_OUTPUT<15>, INITIAL_PERMUTATION_OUTPUT<16>, INITIAL_PERMUTATION_OUTPUT<17>, INITIAL_PERMUTATION_OUTPUT<18>, INITIAL_PERMUTATION_OUTPUT<19>, INITIAL_PERMUTATION_OUTPUT<1>, INITIAL_PERMUTATION_OUTPUT<20>, INITIAL_PERMUTATION_OUTPUT<21>, INITIAL_PERMUTATION_OUTPUT<22>, INITIAL_PERMUTATION_OUTPUT<23>, INITIAL_PERMUTATION_OUTPUT<24>, INITIAL_PERMUTATION_OUTPUT<25>, INITIAL_PERMUTATION_OUTPUT<26>, INITIAL_PERMUTATION_OUTPUT<27>, INITIAL_PERMUTATION_OUTPUT<28>, INITIAL_PERMUTATION_OUTPUT<29>, INITIAL_PERMUTATION_OUTPUT<2>, INITIAL_PERMUTATION_OUTPUT<30>, INITIAL_PERMUTATION_OUTPUT<31>, INITIAL_PERMUTATION_OUTPUT<32>, INITIAL_PERMUTATION_OUTPUT<33>, INITIAL_PERMUTATION_OUTPUT<34>, INITIAL_PERMUTATION_OUTPUT<35>, INITIAL_PERMUTATION_OUTPUT<36>, INITIAL_PERMUTATION_OUTPUT<37>, INITIAL_PERMUTATION_OUTPUT<38>, INITIAL_PERMUTATION_OUTPUT<39>, INITIAL_PERMUTATION_OUTPUT<3>, INITIAL_PERMUTATION_OUTPUT<40>, INITIAL_PERMUTATION_OUTPUT<41>, INITIAL_PERMUTATION_OUTPUT<42>, INITIAL_PERMUTATION_OUTPUT<43>, INITIAL_PERMUTATION_OUTPUT<44>, INITIAL_PERMUTATION_OUTPUT<45>, INITIAL_PERMUTATION_OUTPUT<46>, INITIAL_PERMUTATION_OUTPUT<47>, INITIAL_PERMUTATION_OUTPUT<48>, INITIAL_PERMUTATION_OUTPUT<49>, INITIAL_PERMUTATION_OUTPUT<4>, INITIAL_PERMUTATION_OUTPUT<50>, INITIAL_PERMUTATION_OUTPUT<51>, INITIAL_PERMUTATION_OUTPUT<52>, INITIAL_PERMUTATION_OUTPUT<53>, INITIAL_PERMUTATION_OUTPUT<54>, INITIAL_PERMUTATION_OUTPUT<55>, INITIAL_PERMUTATION_OUTPUT<56>, INITIAL_PERMUTATION_OUTPUT<57>, INITIAL_PERMUTATION_OUTPUT<58>, INITIAL_PERMUTATION_OUTPUT<59>, INITIAL_PERMUTATION_OUTPUT<5>, INITIAL_PERMUTATION_OUTPUT<60>, INITIAL_PERMUTATION_OUTPUT<61>, INITIAL_PERMUTATION_OUTPUT<62>, INITIAL_PERMUTATION_OUTPUT<63>, INITIAL_PERMUTATION_OUTPUT<64>, INITIAL_PERMUTATION_OUTPUT<6>, INITIAL_PERMUTATION_OUTPUT<7>, INITIAL_PERMUTATION_OUTPUT<8>, INITIAL_PERMUTATION_OUTPUT<9>.
+
+Optimizing unit <Des_Top> ...
+
+Optimizing unit <Initial_Permutation> ...
+
+Optimizing unit <Key_Generation> ...
+
+Optimizing unit <Reg32> ...
+
+Optimizing unit <Round1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Des_Top, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Des_Top.ngr
+Top Level Output File Name         : Des_Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 195
+
+Cell Usage :
+# BELS                             : 4835
+#      BUF                         : 3
+#      LUT2                        : 88
+#      LUT3                        : 797
+#      LUT3_D                      : 120
+#      LUT4                        : 2771
+#      MUXF5                       : 1024
+#      MUXF6                       : 32
+# FlipFlops/Latches                : 1024
+#      FDC                         : 1024
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 186
+#      IBUF                        : 122
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-4 
+
+ Number of Slices:                     1997  out of  14752    13%  
+ Number of Slice Flip Flops:           1024  out of  29504     3%  
+ Number of 4 input LUTs:               3776  out of  29504    12%  
+ Number of IOs:                         195
+ Number of bonded IOBs:                 187  out of    250    74%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 1024  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-------------------------------------------+-------+
+Control Signal                     | Buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------+-------+
+RST_IBUF_1(RST_IBUF_1:O)           | NONE(round4/input_to_round2/RIGHT_REG1_19)| 342   |
+RST_IBUF_2(RST_IBUF_2:O)           | NONE(round14/input_to_round2/LEFT_REG1_28)| 342   |
+RST                                | IBUF                                      | 340   |
+-----------------------------------+-------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.623ns (Maximum Frequency: 177.841MHz)
+   Minimum input arrival time before clock: 9.191ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.623ns (frequency: 177.841MHz)
+  Total number of paths / destination ports: 10040 / 960
+-------------------------------------------------------------------------
+Delay:               5.623ns (Levels of Logic = 4)
+  Source:            round14/input_to_round2/RIGHT_REG1_24 (FF)
+  Destination:       round15/input_to_round2/RIGHT_REG1_32 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: round14/input_to_round2/RIGHT_REG1_24 to round15/input_to_round2/RIGHT_REG1_32
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.591   0.855  round14/input_to_round2/RIGHT_REG1_24 (round14/input_to_round2/RIGHT_REG1_24)
+     LUT3:I2->O           11   0.704   1.012  round15/expansion_to_xor1/Mxor_SBOX_INPUT_Result<36>1 (round15/S2_INPUT<1>)
+     LUT4:I1->O            1   0.704   0.000  round15/s2/Mrom_S2_OUTPUT_f5_0_G (N869)
+     MUXF5:I1->O           1   0.321   0.424  round15/s2/Mrom_S2_OUTPUT_f5_0 (round15/s2/Mrom_S2_OUTPUT_f51)
+     LUT4:I3->O            1   0.704   0.000  round15/permut_xor/Mxor_RIGHT_REG_Result<31>1 (round15/RIGHT_REG<32>)
+     FDC:D                     0.308          round15/input_to_round2/RIGHT_REG1_32
+    ----------------------------------------
+    Total                      5.623ns (3.332ns logic, 2.291ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 20197 / 544
+-------------------------------------------------------------------------
+Offset:              9.191ns (Levels of Logic = 6)
+  Source:            CHIP_SELECT_BAR (PAD)
+  Destination:       round16/input_to_round2/RIGHT_REG1_1 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: CHIP_SELECT_BAR to round16/input_to_round2/RIGHT_REG1_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           444   1.218   1.392  CHIP_SELECT_BAR_IBUF (CHIP_SELECT_BAR_IBUF)
+     BUF:I->O            445   0.704   1.472  CHIP_SELECT_BAR_IBUF_1 (CHIP_SELECT_BAR_IBUF_1)
+     LUT3:I1->O           16   0.704   1.209  round9/expansion_to_xor1/Mxor_SBOX_INPUT_Result<7>1 (round9/S7_INPUT<2>)
+     LUT4:I0->O            1   0.704   0.000  round9/s7/Mrom_S7_OUTPUT3 (round9/s7/Mrom_S7_OUTPUT2)
+     MUXF5:I1->O           1   0.321   0.455  round9/s7/Mrom_S7_OUTPUT_f5_0 (round9/s7/Mrom_S7_OUTPUT_f51)
+     LUT4:I2->O            1   0.704   0.000  round9/permut_xor/Mxor_RIGHT_REG_Result<12>1 (round9/RIGHT_REG<13>)
+     FDC:D                     0.308          round9/input_to_round2/RIGHT_REG1_13
+    ----------------------------------------
+    Total                      9.191ns (4.663ns logic, 4.528ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            round16/input_to_round2/LEFT_REG1_25 (FF)
+  Destination:       CIPHER_TEXT<64> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: round16/input_to_round2/LEFT_REG1_25 to CIPHER_TEXT<64>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  round16/input_to_round2/LEFT_REG1_25 (round16/input_to_round2/LEFT_REG1_25)
+     OBUF:I->O                 3.272          CIPHER_TEXT_64_OBUF (CIPHER_TEXT<64>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 56.00 secs
+Total CPU time to Xst completion: 56.16 secs
+ 
+--> 
+
+Total memory usage is 332496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

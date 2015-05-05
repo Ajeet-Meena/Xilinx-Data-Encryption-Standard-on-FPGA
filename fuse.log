@@ -1,0 +1,61 @@
+Running: C:\Xilinx\12.1\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Shubhra/Dropbox/project007/DES/DESS/DES_test1_isim_beh.exe -prj C:/Users/Shubhra/Dropbox/project007/DES/DESS/DES_test1_beh.prj work.DES_test1 work.glbl 
+ISim M.53d (signature 0x7dea747)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Xor_permutation.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Xor_operation.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom8.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom7.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom6.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom5.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom4.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom3.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom2.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_Rom1.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Sbox_output.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Reg32.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Permuted_Choice2.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Permutation.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/key_gen.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Expansion_P.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Swap.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Round1.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/key_top.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/inverse_initial_perm.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/initial_Perm.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/Des_Top.v" into library work
+Parsing Verilog file "C:/Users/Shubhra/Dropbox/project007/DES/DESS/DES_test1.v" into library work
+Parsing Verilog file "C:/Xilinx/12.1/ISE_DS/ISE/verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Initial_Permutation
+Compiling module Key_Generation
+Compiling module Permuted_Choice2
+Compiling module Key_Top
+Compiling module Expansion_Permutation
+Compiling module Xor_Operation
+Compiling module Sbox_Rom1
+Compiling module Sbox_Rom2
+Compiling module Sbox_Rom3
+Compiling module Sbox_Rom4
+Compiling module Sbox_Rom5
+Compiling module Sbox_Rom6
+Compiling module Sbox_Rom7
+Compiling module Sbox_Rom8
+Compiling module Sbox_Output
+Compiling module Permutation
+Compiling module Xor_Permutation
+Compiling module Reg32
+Compiling module Round1
+Compiling module Swap
+Compiling module Inverse_Initial_Permutation
+Compiling module Des_Top
+Compiling module DES_test1
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 17 sub-compilation(s) to finish...
+Compiled 24 Verilog Units
+Built simulation executable C:/Users/Shubhra/Dropbox/project007/DES/DESS/DES_test1_isim_beh.exe
+Fuse Memory Usage: 17488 KB
+Fuse CPU Usage: 639 ms
