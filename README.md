@@ -28,6 +28,7 @@ Encrypt a paragraph using DES algorithm in Verilog HDL, and decrypt the paragrap
 **Modules**
 
 *Top Module*
+
 ![Top Module] (http://i.imgur.com/Uv2bDdr.png)
 
 - ct: Cypher Text
@@ -35,6 +36,7 @@ Encrypt a paragraph using DES algorithm in Verilog HDL, and decrypt the paragrap
 - Data1,2: 7 segment
 
 *Main Module*
+
 ![Main Module] (http://i.imgur.com/Dh8M2Vi.png)
 
 - DES-Top: DES Top module- Responsible for both encryption and decryption
@@ -42,6 +44,7 @@ Encrypt a paragraph using DES algorithm in Verilog HDL, and decrypt the paragrap
 - seven_seg: Seven Segment Driver
 
 *DES top module*
+
 [!DES Top Module] (http://i.imgur.com/sc5Lb7W.png)
  
 
