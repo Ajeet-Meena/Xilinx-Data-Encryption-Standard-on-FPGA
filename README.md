@@ -45,7 +45,7 @@ Encrypt a paragraph using DES algorithm in Verilog HDL, and decrypt the paragrap
 
 *DES top module*
 
-[!DES Top Module] (http://i.imgur.com/sc5Lb7W.png)
+![DES Top Module] (http://i.imgur.com/sc5Lb7W.png)
  
 
 
